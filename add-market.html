@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>NEPA Farmers Market</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="css/styles.css">
+        <link href="https://fonts.googleapis.com/css?family=Bree+Serif|Source+Sans+Pro:300,400,700,900" rel="stylesheet"> 
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.slim.min.js"></script>
+    </head>
+    <body>
+        <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+
+    <header>
+        <div class="nav-bar">
+            <div class="container">
+
+                <div class="logo">
+                    <a href="index.html">NEPA <span>Farmers Markets</span></a>
+                </div>
+
+                <span class="nav-toggle fas fa-bars"></span>
+ 
+                <nav class="nav">
+                    <div class="subMenuHead container">
+                            <span class="nav-toggle fas fa-times"></span>
+                    </div>
+                    <div class="nav-items">
+                            <div class="menu-info">
+                                <img src="img/harvestv2.png">
+                            </div>
+                            <a href="all-markets.html">All Markets</a>
+                            <a href="add-market.html">Add Your Market</a>
+                            
+                            <div class="copywright">Harvest NEPA - 2018</div>
+                        </div>
+                </nav>
+
+            </div>
+        </div>
+    </header>
+
+    <section class="section add-market">
+        <div class="sub-container">
+            <h2>Add Your Market</h2>
+            <h3>If you do not see your market on here or would like to provide more information for a market arleady listed, please use the form below and we will get it updated as soon as possible.</h3>
+        </div>
+        <div class="form-container">
+            <form action="https://submit-form.com/38d3a6d1-1cc2-4994-9e96-52a0406c6847">
+                <input type="checkbox" name="_honeypot" style="display:none" tabindex="-1" autocomplete="off">
+                <label for="marketName">Market Name</label>
+                <input name="marketName" type="text" required>
+                <label for="marketAddress">Address</label>
+                <input name="marketAddress" type="text" required>
+                <label for="marketHours" >Hours of Operation</label>
+                <textarea name="marketHours" required></textarea>
+                <label for="_replyto">Contact Email</label>
+                <input name="_replyto" type="email" required>
+                <button type="submit">Send</button>
+                <input type="hidden" name="_redirect" value="https://jrock2394.github.io/nepafarmers-app/thanks.html" />
+                <input type="hidden" name="_subject" value="New Market" />
+            </form>
+        </div>
+    </section>
+        
+        <script src="js/scripts.js"></script>
+    </body>
+</html>

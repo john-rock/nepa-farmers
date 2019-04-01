@@ -1,0 +1,55 @@
+{
+    "markets":[
+        {
+            "name": "Co-Op Farmers' Market",
+            "lat": 41.422281,
+            "long": -75.662496,
+            "address": "900 Barring Ave, Scranton, PA 18508",
+            "county": "Lackawanna",
+            "hours": "Mon 12PM - 6PM <br /> Wed 12PM - 6PM <br /> Fri 12PM - 6PM"
+        },
+        {
+            "name": "South Side Farmers Market",
+            "lat": 41.401134,
+            "long": -75.668117,
+            "address": "300 Alder St, Scranton, PA 18505",
+            "county": "Lackawanna",
+            "hours": "Sat 10AM - 2PM"
+        },
+        {
+            "name": "Hillside Park Farmers Market",
+            "lat": 41.485250,
+            "long": -75.732029,
+            "address": "1188 Winola Rd, South Abington Township, PA 18411",
+            "hours": "Thurs 2PM - 6PM"
+        },
+        {
+            "name": "Miller's Orchard Farmers Market",
+            "lat": 41.516671,
+            "long": -75.650706,
+            "address": "1421 Fairview Rd, Clarks Summit, PA 18411",
+            "hours": "Wed 10AM - 5PM <br /> Thurs 10AM - 5PM <br /> Fri 10AM - 5PM <br /> Sat 10AM - 4PM"
+        },
+        {
+            "name": "Abington Farmers Market",
+            "lat": 41.478554,
+            "long": -75.684031,
+            "address": "642 Northern Blvd, South Abington Township, PA 18411",
+            "hours": "Sat 9AM - 2PM"
+        },
+        {
+            "name": "Tunkhannock Farmers Market",
+            "lat": 41.516158,
+            "long": -75.961530,
+            "address": "4 Village Ln, Tunkhannock, PA 18657",
+            "hours": "No Information"
+        },
+        {
+            "name": "Spring Hills Farm ",
+            "lat": 41.565312,
+            "long": -75.690676,
+            "address": "500 Kennedy Creek Rd, Dalton, PA 18414",
+            "hours": "No Information"
+        }
+    ]
+} 

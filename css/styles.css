@@ -1,0 +1,411 @@
+*,
+*::before,
+*::after {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box
+}
+
+body{
+    margin:0;
+    position: relative;
+    font-family: 'Bree Serif', serif;
+    overflow: hidden;
+    font-size:1rem;
+    background:#EEEEEE;
+    overflow-y: auto;
+}
+
+.container{
+    max-width:1000px;
+    padding:0 1rem;
+    margin:0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.primary{
+    color:#AED581;
+}
+
+.secondary{
+    color:#a8003b;
+}
+
+.logo a{
+    text-decoration: none;
+    color:#f2ebe2; 
+    font-size:1.6rem; 
+    transition: transform 200ms ease-in,-webkit-transform 200ms ease-in;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight:800;
+    font-size:2.0rem;
+}
+
+.logo a span{
+    font-weight:300;
+    font-size:1.4rem;
+}
+
+.nav-bar .container, .mobileMenuHead{height: 60px;}
+
+.nav-bar.mobile-only{
+    position: -webkit-sticky;
+    position: sticky;
+}
+
+.nav-bar{
+    top:0;
+    left:0;
+    width:100%;
+    height:60px;
+    background:#6d8d84;
+    z-index: 9999;
+    border-bottom: solid #f2ebe2 3px;
+    position: fixed;
+
+}
+
+    .nav {
+        position: fixed;
+        overflow: hidden;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        background: #302b29;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        font-size: 1.75rem;
+        z-index: 9999;
+        -webkit-transform: translate3D(100%,0,0);
+        transform: translate3D(100%,0,0);
+        -webkit-transition: -webkit-transform 200ms linear;
+        transition: -webkit-transform 200ms linear;
+        transition: transform 200ms linear;
+        transition: transform 200ms linear,-webkit-transform 200ms linear;
+        will-change: transform;
+        font-family: 'Source Sans Pro', sans-serif;
+    }
+
+    @media screen and (max-width: 650px) {
+        .nav{
+            width: 100vw;
+        }
+    } 
+
+    .nav .nav-items{
+        display: flex;
+        height: 100vh;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+    }
+    .nav .nav-items a {
+        padding: 0 1.25rem;
+        color: #f1ecc7; 
+        font-size: 1.6rem;
+        text-align: center;
+        text-decoration: none;
+        padding:1rem 0;
+        border-top: solid #F1ECC7 2px;
+        transition:all 0.3s ease;
+    }
+    .nav .nav-items a:hover {
+        background: #7a3813;
+    }
+
+    .nav .nav-items a:last-of-type {
+        border-bottom: solid #F1ECC7 2px;
+    }
+
+
+    
+.nav.open{
+    -webkit-transform: translate3D(0,0,0);
+    transform: translate3D(0,0,0);
+}
+
+span.nav-toggle{
+    padding: 0 1.25rem;
+    color: #f2ebe2; 
+    font-size: 2.0rem;
+    cursor: pointer;
+}
+
+span.nav-toggle.fa-times{
+    color:#a06840;
+    padding: 0 2rem;
+}
+
+.menu-info{
+    text-align: center;
+    padding: 0 1rem;
+}
+
+.menu-info img{
+    max-width: 60%;
+    padding:.5rem 0 2rem;
+}
+
+@media screen and (min-width: 650px) {
+    .menu-info img{
+        max-width: 50%;
+    }
+} 
+
+.copywright{
+    text-align: center;
+    margin-top:auto;
+    font-weight:400;
+    color:#302B29;
+    padding:.4rem 0;
+    font-size:.8rem;
+    background:#a06840;
+}
+ 
+.subMenuHead{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    color:#fff;
+    width:100%;
+    padding: 20px 0;
+}
+
+.subMenuHead .white-logo a{
+    color:#fff;
+}
+
+.subMenuHead .white-logo a{
+    text-decoration: none;
+    color:#9a7152; 
+    font-size:1.6rem; 
+    transition: transform 200ms ease-in,-webkit-transform 200ms ease-in;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight:800;
+    font-size:2.0rem;
+}
+
+.white-logo a span{
+    font-weight:300;
+    font-size:1.4rem;
+}
+
+
+#mapbox{
+    height: 100vh; 
+    width:100%;
+    position: fixed;
+}
+
+.marketIcon{
+    text-align: center;
+    color:#a8003b;
+    text-shadow: 2px 2px 2px #474747;
+    font-size: 1.2rem;
+}
+
+@media screen and (min-width: 650px) {
+    .marketIcon{
+        font-size: 1.2rem;
+    }
+}
+
+.leaflet-popup-content-wrapper{
+    background: #ECE9E6;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to bottom, #FFFFFF, #ECE9E6);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to bottom, #FFFFFF, #ECE9E6); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */    
+}
+
+.leaflet-popup-content{
+    font-family: 'Bree Serif', serif;
+}
+
+.leaflet-left{
+    top:60px !important;
+}
+
+.leaflet-container a.leaflet-popup-close-button{
+    display: none;
+}
+
+.leaflet-popup-content h2{
+    text-align: center;
+    font-size:2rem;
+    line-height: 30px;
+    margin:1.2rem 0;
+    color:#424242;
+}
+
+.leaflet-popup-content h3{
+    text-align: center;
+    font-size:1.2rem;
+    line-height: 20px;
+    color:#424242;
+}
+
+.leaflet-popup-content p{
+    font-size: 1rem;
+    margin:.4rem 0 !important;
+    color:#424242;
+}
+
+
+
+.section{
+    display: flex;
+    flex-direction: column;
+    padding:1rem 0;
+    font-family: 'Source Sans Pro', sans-serif;
+    text-align: center;
+    color:#424242;
+}
+
+section h2{
+    font-size:2.4rem;
+}
+
+section h3{
+    font-weight:400;
+}
+
+.sub-container{
+    max-width:650px;
+    margin:0 auto;
+    padding:0 2rem;
+}
+
+
+/* Add Market Page */
+[type="submit"]{
+    font-family: 'Source Sans Pro', sans-serif;
+    cursor: pointer;
+    font-size: 1.6rem;
+    padding:1rem 4rem;
+    color:#fff;
+    background:#6d8d84;
+    border:none;
+    position: relative;
+    transition: ease-in-out 300ms;
+    transition-duration: 0.4s;
+    font-weight:600;
+}
+[type="submit"]:hover{
+    background:#424242;
+}
+
+section.add-market, .section.all-markets{
+    margin-top:60px;
+}
+
+section.add-market input, textarea{
+    display: block;
+}
+
+section.add-market [type="text"], [type="email"], textarea{
+    width:100%;
+    display: block;
+    padding:1rem;
+    margin:0 0 1.5rem;
+    font-family: 'Source Sans Pro', sans-serif;
+    border: solid #C6C6C6 1px;
+}
+
+section.add-market [type="text"]:focus, [type="email"]:focus, textarea:focus{
+    border: solid #558B2F 1px;
+}
+
+label{
+    font-weight: 600;
+}
+
+section.add-market .form-container{
+    max-width: 650px;
+    margin:1rem auto;
+    padding:0 2rem;
+    width: 100%;
+}
+
+/* Thank You Page */
+section.thanks{
+    margin-top:60px;
+}
+section.thanks a{
+    text-transform: uppercase;
+    color:#424242;
+    text-decoration: none;
+    border-bottom:solid #558B2F 2px;
+    font-weight:700;
+    font-size:1.4rem;
+}
+
+/* All Markets Page */
+.all-markets .sub-container{
+    width:100%;
+}
+.marketBox{
+    text-align: left;
+}
+
+.marketBox .innerMarket{
+    font-size:1.2rem;
+    font-weight: 800;
+    margin:0 0 1.6rem;
+}
+
+.marketBox .innerMarket span{
+    display: block;
+    font-size:.9rem;
+    font-weight:400;
+}
+
+
+
+
+
+
+
+
+
+
+/* iPhone < 5: */
+@media screen and (device-aspect-ratio: 2/3) {
+    select, textarea, input[type="text"], input[type="password"],
+    input[type="datetime"], input[type="datetime-local"],
+    input[type="date"], input[type="month"], input[type="time"],
+    input[type="week"], input[type="number"], input[type="email"],
+    input[type="url"]{ font-size: 16px; }
+}
+
+/* iPhone 5, 5C, 5S, iPod Touch 5g */
+@media screen and (device-aspect-ratio: 40/71) {
+    select, textarea, input[type="text"], input[type="password"],
+    input[type="datetime"], input[type="datetime-local"],
+    input[type="date"], input[type="month"], input[type="time"],
+    input[type="week"], input[type="number"], input[type="email"],
+    input[type="url"]{ font-size: 16px; }
+}
+
+/* iPhone 6, iPhone 6s, iPhone 7 portrait/landscape */
+@media screen and (device-aspect-ratio: 375/667) {
+    select, textarea, input[type="text"], input[type="password"],
+    input[type="datetime"], input[type="datetime-local"],
+    input[type="date"], input[type="month"], input[type="time"],
+    input[type="week"], input[type="number"], input[type="email"],
+    input[type="url"]{ font-size: 16px; }
+}
+
+/* iPhone 6 Plus, iPhone 6s Plus, iPhone 7 Plus portrait/landscape */
+@media screen and (device-aspect-ratio: 9/16) {
+    select, textarea, input[type="text"], input[type="password"],
+    input[type="datetime"], input[type="datetime-local"],
+    input[type="date"], input[type="month"], input[type="time"],
+    input[type="week"], input[type="number"], input[type="email"],
+    input[type="url"]{ font-size: 16px; }
+}
